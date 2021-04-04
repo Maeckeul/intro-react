@@ -34,3 +34,12 @@ let log = function(fruitInconnu, fruitIndex)
 
 // methode forEach
 fruits.forEach(log);
+
+// methode map
+let fruitsTransformes = fruits.map(function(fruitss, fruitssIndex) {
+    console.log(fruitss, fruitssIndex);
+    let sentence = `Je mange ${fruitss}`;
+    return sentence;
+});
+
+console.log(fruitsTransformes);
